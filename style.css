@@ -1,0 +1,205 @@
+/* Write some CSS below */
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 18px;
+  font-family: 'Quicksand';
+}
+
+h1, h2, h3 {
+  font-family: 'Quicksand';
+}
+
+h1 {
+  color: white;
+  font-size: 46px;
+  font-family: 'Patua One';
+}
+
+h2 {
+  font-size: 28px;
+  text-align: left;
+}
+
+h3 {
+font-size: 22px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.banner {
+  background-image: url('images/banner.jpg');
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.banner p{
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.btn-green{
+  background-color: #c1d488;
+  color: black;
+  border-radius: 30px;
+  padding: 20px 50px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.btn-green:hover{
+  background-color: #FCC8D1;
+}
+
+#boutonvert:hover{
+transform: scale(1.1);
+transition: all 0.3s ease; 
+}
+
+.btn-pink{
+  background-color: #FCC8D1;
+  color: black;
+  border-radius: 30px;
+  padding: 20px 50px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.btn-pink:hover{
+  background-color: #e4586f;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+#bouton{
+  margin: 40px auto;
+  width: 280px;
+}
+
+#bouton:hover{
+  transform: scale(1.1);
+  transition: all 0.3s ease;  
+}
+
+.container {
+  width: 900px;
+  margin: 20px auto;
+}
+
+.card-white {
+  background-color: white;
+  padding: 24px;
+  box-shadow: 0 10px 100px rgba(252, 200, 209, 1.0);
+  margin: 8px;
+  border-radius: 5px;
+}
+
+.card-white img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card-white img:hover{
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.footer {
+  background-color: #FCC8D1;
+  padding: 30px 0;
+}
+
+.footer p {
+  font-size: 17px;
+}
+
+.cards-inline{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+#moodboard{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-top: -40px;
+}
+#moodboard1 {
+  width: 150px;
+}
+#moodboard2 {
+  width: 150px;
+}
+#moodboard3 {
+  width: 150px;
+}
+.card-moodboard {
+  background-color: #FDF4F5;
+  border-radius: 5px;
+  box-shadow: 0 10px 100px rgba(209, 77, 114, 0.5);
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline li {
+  display: inline;
+}
+
+.list-inline i {
+  font-size: 50px;
+  color: black;
+  letter-spacing: 30px;
+}
+
+.list-inline i:hover {
+  color: #D14D72;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+#moodboard{
+  text-align: center;
+}
+
+/* Breaking points */
+@media (max-width: 960px) {
+  .container {
+    width: 900px;
+  }
+  .cards-inline {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 680px;
+  }
+  .cards-inline {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 480px;
+  }
+  .cards-inline {
+    grid-template-columns: 1fr;
+  }
+}
